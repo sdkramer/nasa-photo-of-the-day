@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios';
 import TitleBar from "./TitleBar/TitleBar";
-import DateTitle from "./DateTitle/DateTitle"
+import DateTitle from "./DateTitle/DateTitle";
+import Explanation from "./Explanation/Explanation"
 
 function App() {
   const [apod, setApod] = useState(null)
@@ -24,9 +25,7 @@ function App() {
       <TitleBar />
       <DateTitle apod = {apod} />
       {apod && <img src={apod.url} alt="Astronomy Picture of the Day"/>}
-      <p>
-      {apod && apod.explanation}
-      </p>
+      <Explanation apod = {apod}/>
     </div>
   );
 }
