@@ -17,7 +17,7 @@ function App() {
   .catch(err => {
     // debugger
   })
-  }, [])
+  }, [apod])
  
 
   return (
