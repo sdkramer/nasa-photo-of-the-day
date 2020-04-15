@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <h1>NASA Image of the Day</h1>
-      <h2>{apod && apod.title}</h2>
+  <h2>{apod && apod.date}: {apod && apod.title}</h2>
       {apod && <img src={apod.url} alt="Astronomy Picture of the Day"/>}
       <p>
       {apod && apod.explanation}
