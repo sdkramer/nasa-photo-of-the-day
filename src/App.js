@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import axios from 'axios'
+import axios from 'axios';
+import TitleBar from "./TitleBar/TitleBar";
+import DateTitle from "./DateTitle/DateTitle"
 
 function App() {
   const [apod, setApod] = useState(null)
@@ -17,11 +19,10 @@ function App() {
   }, [])
  
 
-
   return (
     <div className="App">
-      <h1>NASA Image of the Day</h1>
-  <h2>{apod && apod.date}: {apod && apod.title}</h2>
+      <TitleBar />
+      <DateTitle apod = {apod} />
       {apod && <img src={apod.url} alt="Astronomy Picture of the Day"/>}
       <p>
       {apod && apod.explanation}
