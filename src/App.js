@@ -22,6 +22,9 @@ function App() {
 
   return (
     <div className="App">
+      {/* <video autoplay muted loop id="myVideo">
+  <source src="https://i.imgur.com/Ym0Dke5.mp4" type="video/mp4"> */}
+{/* </video> */}
       <TitleBar />
       <DateTitle apod = {apod} />
       {apod && <img src={apod.url} alt="Astronomy Picture of the Day"/>}
