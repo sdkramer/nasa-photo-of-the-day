@@ -4,7 +4,7 @@ import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 const Explanation = ({ apod }) => {
   return (
-    // <p className='explanationText'>{apod && apod.explanation}</p>
+ 
     <div className="p-3 my-2 rounded" style={{ background: 'black' }}>
     <Toast>
       <ToastHeader>
@@ -14,6 +14,7 @@ const Explanation = ({ apod }) => {
       {apod && apod.explanation}
       </ToastBody>
     </Toast>
+    <p className='explanationText'>{apod && apod.explanation}</p>
   </div>
   )
   
