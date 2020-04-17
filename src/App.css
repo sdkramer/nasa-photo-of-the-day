@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-image: url("https://i.imgur.com/Ym0Dke5.mp4");
+  background-color: black;
+  color: rgb(247, 210, 189);
+
 }
 
 .App-logo {
@@ -21,7 +25,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 247, 247);
 }
 
 .App-link {
